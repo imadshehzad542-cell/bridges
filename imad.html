@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's Famous Bridges</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section { height: 500px; object-fit: cover; }
+        .card-img-top { height: 200px; object-fit: cover; }
+        section { padding: 60px 0; }
+    </style>
+</head>
+<body class="bg-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">WORLD'S FAMOUS BRIDGES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bridges">Famous Bridges</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&w=1500&q=80" class="d-block w-100 hero-section" alt="Golden Gate">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Connecting the World</h1>
+                    <p>Discover the engineering marvels that span across waters.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1500&q=80" class="d-block w-100 hero-section" alt="Tower Bridge">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Iconic Structures</h1>
+                    <p>Beautiful architecture meeting modern functionality.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <section id="bridges" class="container">
+        <h2 class="text-center mb-5">Famous Bridges</h2>
+        <div class="row g-4">
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Golden Gate">
+                    <div class="card-body">
+                        <h5 class="card-title">Golden Gate Bridge</h5>
+                        <p class="card-text">USA ke San Francisco mein waqay ye bridge apni orange color ki wajah se puri dunya mein mashhoor hai.</p>
+                        <button class="btn btn-primary btn-sm">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Tower Bridge">
+                    <div class="card-body">
+                        <h5 class="card-title">Tower Bridge</h5>
+                        <p class="card-text">London ka ye iconic bridge River Thames par bana hai aur ye khul bhi sakta hai baray ships ke liye.</p>
+                        <button class="btn btn-primary btn-sm">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.bridgeclimb.com/getmedia/17e5515e-fb1f-453a-b309-dc48ee0eae16/Hero.jpg" class="card-img-top" alt="Sydney Harbour">
+                    <div class="card-body">
+                        <h5 class="card-title">Sydney Harbour Bridge</h5>
+                        <p class="card-text">Australia ka ye bridge "The Coathanger" ke naam se jana jata hai aur engineering ka shahkar hai.</p>
+                        <button class="btn btn-primary btn-sm">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 border p-4 shadow-sm rounded bg-white">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="userName" class="form-label">Aapka Naam</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Apna pura naam likhen" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="userEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="userMessage" class="form-label">Aapka Sawal</label>
+                        <textarea class="form-control" id="userMessage" rows="4" placeholder="Bridge ke bare mein mazeed kya janna chahte hain?"></textarea>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-dark">Message Bhejen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="map" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Bridges Around the Globe</h2>
+            <p class="text-center mb-5 text-muted">Ye map dunya ke mashhoor bridges ki locations dikhata hai.</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="ratio ratio-21x9 shadow-lg rounded overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153166!3d-37.816279742021234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1616161616161!5m2!1sen!2s" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2026 World's Famous Bridges | Made with imad</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
